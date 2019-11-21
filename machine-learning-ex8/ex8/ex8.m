@@ -39,8 +39,8 @@ axis([0 30 0 30]);
 xlabel('Latency (ms)');
 ylabel('Throughput (mb/s)');
 
-fprintf('Program paused. Press enter to continue.\n');
-pause
+fprintf('Program kbhitd. Press enter to continue.\n');
+kbhit
 
 
 %% ================== Part 2: Estimate the dataset statistics ===================
@@ -65,8 +65,8 @@ visualizeFit(X,  mu, sigma2);
 xlabel('Latency (ms)');
 ylabel('Throughput (mb/s)');
 
-fprintf('Program paused. Press enter to continue.\n');
-pause;
+fprintf('Program kbhitd. Press enter to continue.\n');
+kbhit;
 
 %% ================== Part 3: Find Outliers ===================
 %  Now you will find a good epsilon threshold using a cross-validation set
@@ -89,8 +89,8 @@ hold on
 plot(X(outliers, 1), X(outliers, 2), 'ro', 'LineWidth', 2, 'MarkerSize', 10);
 hold off
 
-fprintf('Program paused. Press enter to continue.\n');
-pause;
+fprintf('Program kbhitd. Press enter to continue.\n');
+kbhit;
 
 %% ================== Part 4: Multidimensional Outliers ===================
 %  We will now use the code from the previous part and apply it to a 
